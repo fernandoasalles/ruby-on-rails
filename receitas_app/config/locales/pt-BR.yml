@@ -1,0 +1,54 @@
+pt-BR:
+  receitas:
+    index:
+      title: "Receitas"
+      subtitle: "Lista de receitas"
+      new: "Nova receita"
+      edit: "Atualizar receita"
+      show: "Ver receita"
+
+    new:
+      title: "Nova receita"
+      form:
+        submit: "Nova receita"
+      subtitle: "Crie uma nova receita"
+      back: "Voltar a lista de receitas"
+      
+    edit:
+      title: "Atualizar receita"
+      form:
+        submit: "Atualizar receita"
+      back: "Voltar a lista de receitas"
+      show: "Ver receita"
+
+    show:
+      title: "Ver receita"
+      back: "Voltar a lista de receitas"
+      update: "Atualizar receita"
+      delete: "Excluir receita"
+      confirm: "Tem certeza que deseja excluir?"
+      
+  activerecord:
+    models:
+      receita: Receita
+    attributes:
+      receita:
+        nome: Nome
+        ingredientes: Ingredientes
+        modo_de_preparo: Modo de Preparo
+        categoria: Categoria
+
+  helpers:
+    submit:
+      create: "Criar receita"
+      update: "Atualizar receita"
+      show: "Ver receita"
+      delete: "Excluir receita"
+
+  notices:
+    create: "Receita criada com sucesso."
+    update: "Receita atualizada com sucesso."
+    destroy: "Receita excluída com sucesso."
+
+  messages:
+    confirm: "Tem certeza que deseja excluir?"

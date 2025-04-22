@@ -8,3 +8,12 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
+ .aviso {
+  background-color: #e0ffe0;
+  border: 1px solid #00aa00;
+  color: #006600;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}

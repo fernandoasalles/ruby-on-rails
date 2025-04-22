@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nome: MyString
+  ingredientes: MyText
+  modo_de_preparo: MyText
+
+two:
+  nome: MyString
+  ingredientes: MyText
+  modo_de_preparo: MyText

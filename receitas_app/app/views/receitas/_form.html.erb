@@ -1,0 +1,55 @@
+<%= form_with(model: receita) do |form| %>
+  <style>
+    .field label {
+      display: block;
+      margin-bottom: 4px;
+      font-weight: bold;
+    }
+
+    .field input,
+    .field textarea {
+      width: 100%;
+      max-width: 500px;
+      padding: 8px;
+      margin-bottom: 12px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+  </style>
+
+  <% if receita.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(receita.errors.count, "error") %> proibido salvar esta receita:</h2>
+
+      <ul>
+        <% receita.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :nome, style: "display: block" %>
+    <%= form.text_field :nome %>
+  </div>
+
+  <div>
+    <%= form.label :categoria, style: "display: block" %>
+    <%= form.textarea :categoria %>
+  </div>
+
+  <div>
+    <%= form.label :ingredientes, style: "display: block" %>
+    <%= form.textarea :ingredientes %>
+  </div>
+
+  <div>
+    <%= form.label :modo_de_preparo, style: "display: block" %>
+    <%= form.textarea :modo_de_preparo %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

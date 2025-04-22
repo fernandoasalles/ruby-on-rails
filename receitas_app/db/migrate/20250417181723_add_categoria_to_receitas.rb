@@ -1,0 +1,5 @@
+class AddCategoriaToReceitas < ActiveRecord::Migration[8.0]
+  def change
+    add_column :receitas, :categoria, :string
+  end
+end

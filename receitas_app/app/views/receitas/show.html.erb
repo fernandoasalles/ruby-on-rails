@@ -1,0 +1,20 @@
+<% if notice %>
+  <div class="aviso"><%= notice %></div>
+<% end %>
+
+<% content_for :title, t('.title') %>
+
+<div style="text-align: right; padding: 8px;">
+  <%= link_to "🇧🇷 Português", url_for(locale: 'pt-BR') %> |
+  <%= link_to "🇺🇸 English", url_for(locale: 'en') %>
+</div>
+
+<h1><%= t('.title') %></h1>
+
+<%= render "receita", receita: @receita %>
+
+<div>
+  <%= link_to t('.update'), edit_receita_path(@receita) %> |
+  <%= link_to t('.back'), receitas_path %>
+  <%= button_to t('.delete'), @receita, method: :delete, data: { confirm: t('messages.confirm') }, class: "botao excluir" %>
+</div>
