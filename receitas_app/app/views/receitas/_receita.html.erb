@@ -16,7 +16,6 @@
 
   <p>
     <strong><%= t('activerecord.attributes.receita.modo_de_preparo') %>:</strong>
-    <%= receita.modo_de_preparo %>
+    <%= simple_format(receita.modo_de_preparo) %>
   </p>
-
 </div>
