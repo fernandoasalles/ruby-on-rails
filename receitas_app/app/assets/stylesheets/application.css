@@ -17,3 +17,26 @@
   margin-bottom: 20px;
   font-weight: bold;
  }
+
+ a.botao-nativo {
+  display: inline-block;
+  padding: 2px 8px;
+  font-size: 13px;
+  font-family: sans-serif;
+  color: black;
+  background-color: #E9E9ED;
+  border: 1px solid #8F8F9D;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a.botao-nativo:hover {
+  background-color: #d5d5d5;
+}
+
+.espacado {
+  margin-right: 12px;
+  margin-bottom: 12px;
+  display: inline-block;
+}

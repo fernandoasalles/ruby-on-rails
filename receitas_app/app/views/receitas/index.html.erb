@@ -15,9 +15,9 @@
   <% @receitas.each do |receita| %>
     <%= render receita %>
     <p>
-      <%= button_to t('.show'), receita, method: :get, class: "botao ver" %>
+      <%= link_to t('.show'), receita, class: "botao-nativo" %>
     </p>
   <% end %>
 </div>
 
-<%= button_to t('.new'), new_receita_path, method: :get, class: "botao criar" %>
+<%= link_to t('.new'), new_receita_path, class: "botao-nativo" %>
