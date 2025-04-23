@@ -14,7 +14,9 @@
 <%= render "receita", receita: @receita %>
 
 <div>
-  <%= link_to t('.update'), edit_receita_path(@receita) %> |
-  <%= link_to t('.back'), receitas_path %>
+  <%= button_to t('.update'), edit_receita_path(@receita), method: :get, class: "botao atualizar" %>
+  <br>
   <%= button_to t('.delete'), @receita, method: :delete, data: { confirm: t('messages.confirm') }, class: "botao excluir" %>
+  <br>
+  <%= button_to t('.back'), receitas_path, method: :get, class: "botao ver" %>
 </div>

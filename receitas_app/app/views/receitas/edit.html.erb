@@ -12,6 +12,5 @@
 <br>
 
 <div>
-  <%= link_to t('.show'), @receita %> |
-  <%= link_to t('.back'), receitas_path %>
+  <%= button_to t('.back'), receitas_path, method: :get, class: "botao ver" %>
 </div>
