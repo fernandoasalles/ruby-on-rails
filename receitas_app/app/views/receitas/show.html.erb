@@ -16,7 +16,7 @@
 <div>
   <%= link_to t('.update'), edit_receita_path(@receita), class: "botao-nativo espacado" %>
   <br>
-  <%= link_to t('.delete'), @receita, class: "botao-nativo espacado" %>
+  <%= link_to t('.delete'), receita_path(@receita), method: :delete, data: { confirm: t('messages.confirm') }, class: "botao-nativo espacado" %>
   <br>
   <%= link_to t('.back'), receitas_path, class: "botao-nativo" %>
 </div>
