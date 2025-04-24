@@ -1,0 +1,54 @@
+es:
+  receitas:
+    index:
+      title: "Recetas"
+      subtitle: "Lista de recetas"
+      new: "Nueva receta"
+      edit: "Actualizar receta"
+      show: "Ver receta"
+
+    new:
+      title: "Nueva receta"
+      form:
+        submit: "Crear receta"
+      subtitle: "Crear una nueva receta"
+      back: "Volver a las recetas"
+
+    edit:
+      title: "Actualizar receta"
+      form:
+        submit: "Actualizar receta"
+      back: "Volver a las recetas"
+      show: "Ver receta"
+
+    show:
+      title: "Ver receta"
+      back: "Volver a las recetas"
+      update: "Actualizar receta"
+      delete: "Eliminar receta"
+      confirm: "¿Estás seguro de que deseas eliminar esta receta?"
+
+  activerecord:
+    models:
+      receita: Receta
+    attributes:
+      receita:
+        nome: "Nombre"
+        ingredientes: "Ingredientes"
+        modo_de_preparo: "Método de preparación"
+        categoria: "Categoría"
+
+  helpers:
+    submit:
+      create: "Crear receta"
+      update: "Actualizar receta"
+      show: "Ver receta"
+      delete: "Eliminar receta"
+
+  notices:
+    create: "La receta fue creada con éxito."
+    update: "La receta fue actualizada con éxito."
+    destroy: "La receta fue eliminada con éxito."
+
+  messages:
+    confirm: "¿Estás seguro de que deseas eliminar esto?"
