@@ -11,7 +11,7 @@
 
   <p>
     <strong><%= t('activerecord.attributes.receita.ingredientes') %>:</strong>
-    <%= receita.ingredientes %>
+    <%= simple_format(receita.ingredientes) %>
   </p>
 
   <p>
